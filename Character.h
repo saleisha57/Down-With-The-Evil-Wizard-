@@ -22,9 +22,9 @@ class Character // THE CHARACTER CLASS
   {
     int health_holder;
     
-    if(_race == "Elf")
+    if(_race == "Elf" || _race == "elf")
       {
-	health_holder = (rand() % ((25-20)+20)+1);
+	health_holder = (rand() % ((25-20)+1)+20);
       }
     
     return health_holder;
