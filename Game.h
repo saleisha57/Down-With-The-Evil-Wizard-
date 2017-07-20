@@ -18,6 +18,7 @@ class Game
     c.set_health();
     
     cout<<c.get_name() + " is a " + c.get_race() + " " + c.get_class() + "."<<endl;
+    cout<<c.get_name() + " has " + c.get_health_s() + " base health."<<endl;
     
   }
   

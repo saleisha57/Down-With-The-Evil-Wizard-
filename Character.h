@@ -26,8 +26,27 @@ class Character // THE CHARACTER CLASS
       {
 	health_holder = (rand() % ((25-20)+1)+20);
       }
+    else if(_race == "Human" || _race == "human")
+      {
+	health_holder = (rand() % ((25-20)+1)+20);
+      }
+    else if(_race == "Orc" || _race == "orc")
+      {
+	health_holder = (rand() % ((30-25)+1)+25);
+      }
+    else
+      {
+	health_holder = (rand() % ((25-20)+1)+20);
+      }
     
     return health_holder;
+  }
+  
+
+
+  string get_health_s()
+  {
+    return to_string(_hp);
   }
 
 
